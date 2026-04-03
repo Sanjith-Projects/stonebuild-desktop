@@ -1,4 +1,4 @@
-const BASE_URL = "https://q2cp7g9m-8080.inc1.devtunnels.ms"; // change to your PHP backend
+const BASE_URL = "https://api.stonebase.in"; // change to your PHP backend
 
 type ApiOptions = {
   url: string;
