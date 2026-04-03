@@ -1,4 +1,5 @@
  // app/layout.tsx
+import { UIProvider } from "@/providers/ui-provider";
 import "./globals.css";
 import { Source_Sans_3 } from "next/font/google";
 
@@ -21,7 +22,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={sourceSans.variable}>
       <body className="bg-gray-50 text-gray-900 font-sourceSans">
+         <UIProvider>
+    
         {children}
+
+        </UIProvider>
       </body>
     </html>
   );
